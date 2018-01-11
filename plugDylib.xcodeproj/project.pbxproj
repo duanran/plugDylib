@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180816591FB04F7500080D16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180816581FB04F7500080D16 /* Foundation.framework */; };
+		180816631FB04F7500080D16 /* plugDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 180816621FB04F7500080D16 /* plugDylib.mm */; };
+		184463481FB16483006EE7A9 /* AdTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 184463461FB16483006EE7A9 /* AdTest.h */; };
+		184463491FB16483006EE7A9 /* AdTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 184463471FB16483006EE7A9 /* AdTest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		180816551FB04F7500080D16 /* plugDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = plugDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		180816581FB04F7500080D16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1808165D1FB04F7500080D16 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		1808165E1FB04F7500080D16 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		180816601FB04F7500080D16 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		180816611FB04F7500080D16 /* plugDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "plugDylib-Prefix.pch"; sourceTree = "<group>"; };
+		180816621FB04F7500080D16 /* plugDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = plugDylib.mm; sourceTree = "<group>"; };
+		180816671FB04F7500080D16 /* plugDylib.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = plugDylib.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/plugDylib.plist; sourceTree = "<group>"; };
+		184463461FB16483006EE7A9 /* AdTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdTest.h; sourceTree = "<group>"; };
+		184463471FB16483006EE7A9 /* AdTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		180816511FB04F7500080D16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180816591FB04F7500080D16 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1808164B1FB04F7500080D16 = {
+			isa = PBXGroup;
+			children = (
+				1808165A1FB04F7500080D16 /* plugDylib */,
+				180816571FB04F7500080D16 /* Frameworks */,
+				180816561FB04F7500080D16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		180816561FB04F7500080D16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180816551FB04F7500080D16 /* plugDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180816571FB04F7500080D16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				180816581FB04F7500080D16 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1808165A1FB04F7500080D16 /* plugDylib */ = {
+			isa = PBXGroup;
+			children = (
+				180816621FB04F7500080D16 /* plugDylib.mm */,
+				184463461FB16483006EE7A9 /* AdTest.h */,
+				184463471FB16483006EE7A9 /* AdTest.m */,
+				1808165B1FB04F7500080D16 /* Package */,
+				1808165F1FB04F7500080D16 /* Supporting Files */,
+			);
+			path = plugDylib;
+			sourceTree = "<group>";
+		};
+		1808165B1FB04F7500080D16 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				1808165C1FB04F7500080D16 /* DEBIAN */,
+				180816641FB04F7500080D16 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		1808165C1FB04F7500080D16 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				1808165D1FB04F7500080D16 /* control.txt */,
+				1808165E1FB04F7500080D16 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		1808165F1FB04F7500080D16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				180816601FB04F7500080D16 /* PackageVersion.plist */,
+				180816611FB04F7500080D16 /* plugDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		180816641FB04F7500080D16 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				180816651FB04F7500080D16 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		180816651FB04F7500080D16 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				180816661FB04F7500080D16 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		180816661FB04F7500080D16 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				180816671FB04F7500080D16 /* plugDylib.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		180816521FB04F7500080D16 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184463481FB16483006EE7A9 /* AdTest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		180816541FB04F7500080D16 /* plugDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1808166A1FB04F7500080D16 /* Build configuration list for PBXNativeTarget "plugDylib" */;
+			buildPhases = (
+				180816501FB04F7500080D16 /* Sources */,
+				180816511FB04F7500080D16 /* Frameworks */,
+				180816521FB04F7500080D16 /* Headers */,
+				180816531FB04F7500080D16 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = plugDylib;
+			productName = plugDylib;
+			productReference = 180816551FB04F7500080D16 /* plugDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1808164C1FB04F7500080D16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				TargetAttributes = {
+					180816541FB04F7500080D16 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1808164F1FB04F7500080D16 /* Build configuration list for PBXProject "plugDylib" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1808164B1FB04F7500080D16;
+			productRefGroup = 180816561FB04F7500080D16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				180816541FB04F7500080D16 /* plugDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		180816531FB04F7500080D16 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		180816501FB04F7500080D16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184463491FB16483006EE7A9 /* AdTest.m in Sources */,
+				180816631FB04F7500080D16 /* plugDylib.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		180816681FB04F7500080D16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		180816691FB04F7500080D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		1808166B1FB04F7500080D16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "plugDylib/plugDylib-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		1808166C1FB04F7500080D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "plugDylib/plugDylib-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1808164F1FB04F7500080D16 /* Build configuration list for PBXProject "plugDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180816681FB04F7500080D16 /* Debug */,
+				180816691FB04F7500080D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1808166A1FB04F7500080D16 /* Build configuration list for PBXNativeTarget "plugDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1808166B1FB04F7500080D16 /* Debug */,
+				1808166C1FB04F7500080D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1808164C1FB04F7500080D16 /* Project object */;
+}
